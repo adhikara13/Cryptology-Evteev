@@ -3,7 +3,6 @@ from sympy.ntheory.primetest import is_square
 from tabulate import tabulate
 def FermatPrime(Num):
     a = ceil(sqrt(Num))
-    print(f"√{Num} = |{sqrt(Num)}| = {a}")
     table = []
     while True:
         b = pow(a,2) - Num
@@ -15,6 +14,7 @@ def FermatPrime(Num):
 
 User = int(input("Insert the number that need to be tested: "))
 a , b , table= FermatPrime(User)
+print(f"√{User} = |{sqrt(User)}| = {ceil(sqrt(User))}")
 print(tabulate(table, headers=['a^2 - n = b'],tablefmt="outline"))
 print(f"a = {a} , b = {b}")
 print(f"Factors: p = {a}+{b} = {a+b} , the q = {a}-{b} = {a-b}")
