@@ -1,7 +1,9 @@
 # bruteforce discrete log algorithm
-x = 27
-g = 5
-p = 43
+print("Log g^x = n mod p")
+x = int(input("x = "))
+g = int(input("g = "))
+p = int(input("p = "))
+
 
 res = 0
 while True:
@@ -9,5 +11,5 @@ while True:
         break
     res+=1
     
-print(res)
+print(f"n = {res}")
 

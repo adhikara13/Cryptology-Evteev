@@ -14,7 +14,7 @@ for i in range(1, k-1):
 for i in range(-k, -50,-1):
     sec.append([f"{x}*({g})^{i} mod {p} =",((x * pow(g, i, p)) % p)])
 
-print(tabulate(res, headers=["baby step", "result"],tablefmt="outline"))
-print(tabulate(sec, headers=["giant step", "result"], tablefmt="outline",stralign="right"))
+print(tabulate(res, headers=[f"baby step - {g}^i mod {p} ", "result"],tablefmt="outline"))
+print(tabulate(sec, headers=[f"giant step - {x}*({g})^-i mod {p}", "result"], tablefmt="outline",stralign="right"))
 
 
