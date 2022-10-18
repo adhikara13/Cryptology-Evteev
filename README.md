@@ -1,2 +1,2 @@
-# Cryptology-Evteev
-Program for solving several cryptology tasks
+# Well just basically codes that solve Cryptology tasks!
+Hello Evteev
