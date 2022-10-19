@@ -1,5 +1,5 @@
 # bruteforce discrete log algorithm
-print("Log g^x = n mod p")
+print("Log g^x = n mod p\nx = g^n mod p")
 x = int(input("x = "))
 g = int(input("g = "))
 p = int(input("p = "))

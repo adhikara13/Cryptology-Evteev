@@ -15,7 +15,7 @@ def FermatPrime(Num):
 User = int(input("Insert the number that need to be tested: "))
 a , b , table= FermatPrime(User)
 print(f"√{User} = |{sqrt(User)}| = {ceil(sqrt(User))}")
-print(tabulate(table, headers=['a^2 - n = b'],tablefmt="outline"))
+print(tabulate(table, headers=['a^2 - n = b^2'],tablefmt="outline"))
 print(f"a = {a} , b = {b}")
 print(f"Factors: p = {a}+{b} = {a+b} , the q = {a}-{b} = {a-b}")
 if a+b == 1 or a-b ==1:
