@@ -1,6 +1,6 @@
 from tabulate import tabulate
 # Shanks algo
-print("Log g^x = n mod p")
+print("Log g^x = n mod p\nx = g^n mod p")
 p = int(input("p = "))
 x = int(input("x = "))
 g = int(input("g = "))
