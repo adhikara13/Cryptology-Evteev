@@ -58,11 +58,11 @@ def modular_inverse(n, p):
     return pow(n, p - 2, p)
 
 
-p = int(input("Введите число p: "))
-a = int(input("Введите число a: "))
-b = int(input("Введите число b: "))
+p = int(input("Введите модуль p: "))
+a = int(input("Введите коэффициент a уравнения эллиптической кривой: "))
+b = int(input("Введите коэффициент b уравнения эллиптической кривой: "))
 G = tuple(map(int, input("Введите точку G (формат: x,y): ").split(',')))
-n = int(input("Введите число n: "))
+n = int(input("Введите порядок базовой точки G: "))
 Q = tuple(map(int, input("Введите открытый ключ Q (формат: x,y): ").split(',')))
 z = int(input("Введите хэш-свертку сообщения z: "))
 r, s = map(int, input("Введите подпись (формат: r,s): ").split(','))
